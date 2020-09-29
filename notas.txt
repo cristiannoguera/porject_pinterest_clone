@@ -1,0 +1,11 @@
+3 paginas (inicio, Hoy, siguiendo)
+Barra de navegacion fija
+Diseño reponsive
+
+Gus= Hoy
+Zerch= inicio
+Cris= siguiendo
+
+
+## Dudas
+botones sobre imagenes
