@@ -1,6 +1,157 @@
 *{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+/*Estilos del header*/
+
+header {
+    width: 97%;
+    height: 80px;
+    padding: 4px 16px;
+    border-bottom: solid 1.5px #c0c0c032;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    left: 0;
+    top: 0;
+    position: fixed;
+    background: #fff;
+}
+.cont-img-inicio {
+    width: 15%;
+    margin: 1px;
+    height: fit-content;
+}
+
+.img-inicio {
+    width: 100%;
+    border-radius: 20px;
+    height: auto;
+}
+
+.btn-cont-right {
+    display: flex;
+    align-items: center;
+}
+
+.btn-cont-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo-cont {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    /* padding: 4px; */
+    border-radius: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caret {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+}
+
+.logo-ico {
+    font-size: 30px;
+    color: #e20707;
+    background: white;
+    border-radius: 50%;
+}
+
+.menu-cont {
+    width: fit-content;
+    height: 48px;
+    padding: 0px 5px;
+    border-radius: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 3px;
+}
+
+.menuHover:hover {
+    background: #eee;
+}
+
+.menuPin,
+.menuPin:focus {
+    min-width: fit-content;
+    height: 30px;
+    outline: none;
+    border: 0;
+    background: transparent;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 0px 10px;
+}
+
+.sm-view {
+    display: inherit;
+}
+
+.md-view {
+    display: none;
+}
+
+.selected>input,
+.selected,
+.selected:hover {
+    background: #000;
+    color: #fff;
+}
+
+.menu-ico {
+    font-size: 23px;
+    color: #666;
+}
+
+.iBlue {
+    background: #4369e9;
+    color: #98aff8;
+    border-radius: 50%;
+}
+
+.search-cont {
+    width: 65%;
+    /* display: none; */
+}
+
+.input-search,
+.input-search:focus {
+    width: 100%;
+    height: 45px;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    background-color: #eee;
+    padding-left: 20px;
+    padding-right: 10px;
+    font-size: 15px;
+}
+
+@media screen and (min-width: 0px) and (max-width:650px) {
+    .sm-view {
+        display: inherit;
+    }
+    .md-view {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .sm-view {
+        display: none;
+    }
+    .md-view {
+        display: inherit;
+    }
+}
+/*Finaliza los estilos del header*/
 .encabezado{
     width: 750px;
     font-size: 22px;
@@ -10,70 +161,172 @@
     padding-top: 120px; /*Eliminar cuando se cree el header*/
     margin: 0 auto;
 }
+/*fallowers*/
 .imagen__logo {
     width: 60px;
+    height: 60px;
+    margin: -7px;
+}
+.img_add{
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+    margin-left: 100px;
+}
+.imagen__logo2 {
+    width: 60px;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    border-radius: 35px;
     
 }
+
 /*Estilos galerias*/
 
 .gallery-container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 150px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 280px;
     padding: 20px;
     grid-gap: 15px;
 }
 .gallery__item {
     position: relative;
+
 }
 .gallery__img{
     width: 100%;
-    height: 100%;
+    height: 70%;
     object-fit: cover;
     border-radius: 15px;
 }
-.gallery__title {
+.gallery__title{
     position: absolute;
     bottom: 0;
-    color: white;
+    color: rgb(102, 233, 41);
     width: 100%;
     margin: 0;
     padding: 10px;
 }
-@media (max-width:427px) {
+.img__text{
+    display: inline-flex;
+    padding: 0;
+    align-items: center;
+}
+h5{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    color: #000000;
+    width: 90%;
+    height: 10%;
+    padding: 0;
+    margin: 0;
+    padding-left: 5px;
+}
+a{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    color: #000000;
+    width: 100%;
+    height: 15%;
+    padding: 0;
+    padding-left: 5px;
+    margin: 0;
+}
+.img_profile {
+    border-radius: 33px;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    margin: 0;
+}
+.gallery__item:nth-child(4){
+    grid-column-start: span 2;
+}
+.gallery__item:nth-child(5){
+    grid-row-start: span 2;
+}
+.gallery__item:nth-child(7){
+    grid-row-start: span 2;
+}
+@media (max-width:766px) {
     .gallery-container {
         grid-template-columns: repeat(2, 1fr);
     }
     .encabezado {
         width: 150px;
     }
+    .gallery__item:nth-child(2){
+        grid-row-start: span 2;
+    }
+    .encabezado h2 {
+        font-size: 20px;
+    }
+    .encabezado {
+        width: 500px;
+    }
 }
-@media (min-width:428px) {
+@media (min-width:767px) {
     .gallery-container {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
     .encabezado {
         width: 450px;
     }
+    .gallery__item:nth-child(3){
+        grid-column-start: span 2;
+    }
 }
-@media (min-width:768px) {
+@media (min-width: 900px) {
+    .gallery-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .encabezado {
+        width: 750px;
+    }
+    .container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .gallery__item:nth-child(3){
+        grid-column-start: span 1;
+    }
+}
+@media (min-width:1100px) {
+    .gallery-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .container {
+    padding-left: 50px;
+    padding-right: 50px;
+    }
+    .encabezado {
+        width: 750px;
+    }
+    .gallery__item:nth-child(3){
+        grid-column-start: span 2;
+    }
+    .gallery__item:nth-child(15){
+        grid-column-start: span 2;
+    }
+}
+@media (min-width:1500px) {
     .gallery-container {
         grid-template-columns: repeat(5, 1fr);
     }
-    .encabezado {
-        width: 750px;
-    }
-}
-@media (min-width:1024px) {
-    .gallery-container {
-        grid-template-columns: repeat(6, 1fr);
-    }
     .container {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
     }
     .encabezado {
         width: 750px;
     }
+    .gallery__item:nth-child(3){
+        grid-column-start: span 1;
+    }
+    .gallery__item:nth-child(12){
+        grid-row-start: span 2;
+    }
 }
-

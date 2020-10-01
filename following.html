@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -9,83 +9,206 @@
 </head>
 
 <body>
-    <div id="header">
-    </div>
+    <header>
+        <div class="btn-cont-left">
+            <div class="logo-cont menuHover">
+                <i class="fa fa-pinterest logo-ico"></i>
+            </div>
+            <div class="menu-cont menuHover sm-view">
+                <select id="menuPin" name="menuPin" class="menuPin">
+                    <option value="inicio">Inicio <!--&#10003;--></option>
+                    <option value="hoy">Hoy</option>
+                    <option value="siguiendo">Siguiendo</option>
+                </select>
+            </div>
+            <div class="menu-cont menuHover md-view selected">
+                <input class="menuPin" type="button" value="Inicio">
+            </div>
+            <div class="menu-cont menuHover md-view">
+                <input class="menuPin" type="button" value="Hoy">
+            </div>
+            <div class="menu-cont menuHover md-view">
+                <input class="menuPin" type="button" value="Siguiendo">
+            </div>
+        </div>
+        <div class="search-cont">
+            <input class="input-search md-view" type="search" name="" id="" placeholder="Buscar">
+        </div>
+
+        <div class="btn-cont-right">
+            <div class="logo-cont menuHover sm-view">
+                <i class="fa fa-search menu-ico"></i>
+            </div>
+            <div class="logo-cont menuHover">
+                <i class="fa fa-bell menu-ico"></i>
+            </div>
+            <div class="logo-cont menuHover">
+                <i class="fa fa-commenting menu-ico" aria-hidden="true"></i>
+            </div>
+            <div class="logo-cont menuHover">
+                <i class="fa fa-user-circle menu-ico iBlue" aria-hidden="true"></i>
+            </div>
+            <div class="logo-cont caret menuHover">
+                <i class="fa fa-caret-down menu-ico " aria-hidden="true"></i>
+            </div>
+        </div>
+    </header>
     <div class="container">
         <div class="encabezado">
-            <h2>¡Te damos la bienvenida a tu nueva pestaña de seguiendo!</h2>
-            <h2> Descubre ideas de personas a las que sigues...</h2>
-        
-            <img src="/img/logo.png" alt="logo" class="imagen__logo">
-            <img src="/img/logo.png" alt="logo" class="imagen__logo">
-            <img src="/img/logo.png" alt="logo" class="imagen__logo">
-            <img src="/img/logo.png" alt="logo" class="imagen__logo">
-            <img src="/img/logo.png" alt="logo" class="imagen__logo">
-            <img src="/img/logo.png" alt="logo" class="imagen__logo">
-        </div>
-                
-                <div class="gallery-container">
-                    <div class="gallery__item">
-                        <img src="img/imagen1.jpg" alt="" class="gallery__img">
-                        <h2 class="gallery__title">Imagen 1</h2>
-                    </div>
-                    <div class="gallery__item">
-                        <img src="img/imagen2.jpg" alt="" class="gallery__img">
-                        <h2 class="gallery__title">Imagen 2</h2>
-                    </div>
-                    <div class="gallery__item">
-                        <img src="img/imagen3.jpg" alt="" class="gallery__img">
-                        <h2 class="gallery__title">Imagen 3</h2>
-                    </div>
-                    <div class="gallery__item">
-                        <img src="img/imagen4.jpg" alt="" class="gallery__img">
-                        <h2 class="gallery__title">Imagen 4</h2>
-                    </div>
-                    <div class="gallery__item">
-                        <img src="img/imagen5.jpg" alt="" class="gallery__img">
-                        <h2 class="gallery__title">Imagen 5</h2>
-                    </div>
-                    <div class="gallery__item">
-                        <img src="img/imagen6.jpg" alt="" class="gallery__img">
-                        <h2 class="gallery__title">Imagen 6</h2>
-                    </div>
-                    <div class="gallery__item">
-                        <img src="img/imagen7.jpg" alt="" class="gallery__img">
-                        <h2 class="gallery__title">Imagen 7</h2>
-                    </div>
-                    <div class="gallery__item">
-                        <img src="img/imagen8.jpg" alt="" class="gallery__img">
-                        <h2 class="gallery__title">Imagen 8</h2>
-                    </div>
-                    <div class="gallery__item">
-                        <img src="img/imagen9.jpg" alt="" class="gallery__img">
-                        <h2 class="gallery__title">Imagen 9</h2>
-                    </div>
-                    <div class="gallery__item">
-                        <img src="img/imagen4.jpg" alt="" class="gallery__img">
-                        <h2 class="gallery__title">Imagen 10</h2>
-                    </div>
-                    <div class="gallery__item">
-                        <img src="img/imagen5.jpg" alt="" class="gallery__img">
-                        <h2 class="gallery__title">Imagen 11</h2>
-                    </div>
-                    <div class="gallery__item">
-                        <img src="img/imagen6.jpg" alt="" class="gallery__img">
-                        <h2 class="gallery__title">Imagen 12</h2>
-                    </div>
-                    <div class="gallery__item">
-                        <img src="img/imagen7.jpg" alt="" class="gallery__img">
-                        <h2 class="gallery__title">Imagen 13</h2>
-                    </div>
-                    <div class="gallery__item">
-                        <img src="img/imagen8.jpg" alt="" class="gallery__img">
-                        <h2 class="gallery__title">Imagen 14</h2>
-                    </div>
-                    <div class="gallery__item">
-                        <img src="img/imagen9.jpg" alt="" class="gallery__img">
-                        <h2 class="gallery__title">Imagen 15</h2>
-                    </div>
+            <h2> De personas a las que sigues</h2>
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+                <div>
+                    <img src="/img/logo.png" alt="logo" class="imagen__logo">
+                    <img src="/img/logo.png" alt="logo" class="imagen__logo">
+                    <img src="/img/logo.png" alt="logo" class="imagen__logo">
+                    <img src="/img/logo.png" alt="logo" class="imagen__logo">
+                    <img src="/img/logo.png" alt="logo" class="imagen__logo">
+                    <img src="/img/logo.png" alt="logo" class="imagen__logo">
+                    <img src="/img/logo.png" alt="logo" class="imagen__logo">
+                    <img src="/img/logo.png" alt="logo" class="imagen__logo">
                 </div>
+                <div class="img_add">
+                    <img src="/img/logo.png" alt="logo" class="imagen__logo2">
+                </div>
+            </div>
+        </div>
+        <div class="gallery-container">
+            <div class="gallery__item">
+                <img src="img/imagen1.jpg" alt="" class="gallery__img">
+                <h5>Fairly average battle station</h5>
+                <div class="img__text">
+                    <img class="img_profile"
+                        src="https://i.pinimg.com/280x280_RS/4b/06/41/4b0641e165cc52052375fbddc3556188.jpg" alt="">
+                    <a target="blank" href="https://co.pinterest.com/bestgamesetups/_created/">Bestgamesetups.com</a>
+                </div>
+            </div>
+            <div class="gallery__item">
+                <img src="img/imagen2.jpg" alt="" class="gallery__img">
+                <h5>Fairly average battle station</h5>
+                <div class="img__text">
+                    <img class="img_profile"
+                        src="https://i.pinimg.com/280x280_RS/4b/06/41/4b0641e165cc52052375fbddc3556188.jpg" alt="">
+                    <a target="blank" href="https://co.pinterest.com/bestgamesetups/_created/">Bestgamesetups.com</a>
+                </div>
+            </div>
+            <div class="gallery__item">
+                <img src="img/imagen3.jpg" alt="" class="gallery__img">
+                <h5>Fairly average battle station</h5>
+                <div class="img__text">
+                    <img class="img_profile"
+                        src="https://i.pinimg.com/280x280_RS/4b/06/41/4b0641e165cc52052375fbddc3556188.jpg" alt="">
+                    <a target="blank" href="https://co.pinterest.com/bestgamesetups/_created/">Bestgamesetups.com</a>
+                </div>
+            </div>
+            <div class="gallery__item">
+                <img src="img/imagen4.jpg" alt="" class="gallery__img">
+                <h5>Fairly average battle station</h5>
+                <div class="img__text">
+                    <img class="img_profile"
+                        src="https://i.pinimg.com/280x280_RS/4b/06/41/4b0641e165cc52052375fbddc3556188.jpg" alt="">
+                    <a target="blank" href="https://co.pinterest.com/bestgamesetups/_created/">Bestgamesetups.com</a>
+                </div>
+            </div>
+            <div class="gallery__item">
+                <img src="img/imagen5.jpg" alt="" class="gallery__img">
+                <h5>Fairly average battle station</h5>
+                <div class="img__text">
+                    <img class="img_profile"
+                        src="https://i.pinimg.com/280x280_RS/4b/06/41/4b0641e165cc52052375fbddc3556188.jpg" alt="">
+                    <a target="blank" href="https://co.pinterest.com/bestgamesetups/_created/">Bestgamesetups.com</a>
+                </div>
+            </div>
+            <div class="gallery__item">
+                <img src="img/imagen6.jpg" alt="" class="gallery__img">
+                <h5>Fairly average battle station</h5>
+                <div class="img__text">
+                    <img class="img_profile"
+                        src="https://i.pinimg.com/280x280_RS/4b/06/41/4b0641e165cc52052375fbddc3556188.jpg" alt="">
+                    <a target="blank" href="https://co.pinterest.com/bestgamesetups/_created/">Bestgamesetups.com</a>
+                </div>
+            </div>
+            <div class="gallery__item">
+                <img src="img/imagen7.jpg" alt="" class="gallery__img">
+                <h5>Fairly average battle station</h5>
+                <div class="img__text">
+                    <img class="img_profile"
+                        src="https://i.pinimg.com/280x280_RS/4b/06/41/4b0641e165cc52052375fbddc3556188.jpg" alt="">
+                    <a target="blank" href="https://co.pinterest.com/bestgamesetups/_created/">Bestgamesetups.com</a>
+                </div>
+            </div>
+            <div class="gallery__item">
+                <img src="img/imagen8.jpg" alt="" class="gallery__img">
+                <h5>Fairly average battle station</h5>
+                <div class="img__text">
+                    <img class="img_profile"
+                        src="https://i.pinimg.com/280x280_RS/4b/06/41/4b0641e165cc52052375fbddc3556188.jpg" alt="">
+                    <a target="blank" href="https://co.pinterest.com/bestgamesetups/_created/">Bestgamesetups.com</a>
+                </div>
+            </div>
+            <div class="gallery__item">
+                <img src="img/imagen9.jpg" alt="" class="gallery__img">
+                <h5>Fairly average battle station</h5>
+                <div class="img__text">
+                    <img class="img_profile"
+                        src="https://i.pinimg.com/280x280_RS/4b/06/41/4b0641e165cc52052375fbddc3556188.jpg" alt="">
+                    <a target="blank" href="https://co.pinterest.com/bestgamesetups/_created/">Bestgamesetups.com</a>
+                </div>
+            </div>
+            <div class="gallery__item">
+                <img src="img/imagen4.jpg" alt="" class="gallery__img">
+                <h5>Fairly average battle station</h5>
+                <div class="img__text">
+                    <img class="img_profile"
+                        src="https://i.pinimg.com/280x280_RS/4b/06/41/4b0641e165cc52052375fbddc3556188.jpg" alt="">
+                    <a target="blank" href="https://co.pinterest.com/bestgamesetups/_created/">Bestgamesetups.com</a>
+                </div>
+            </div>
+            <div class="gallery__item">
+                <img src="img/imagen5.jpg" alt="" class="gallery__img">
+                <h5>Fairly average battle station</h5>
+                <div class="img__text">
+                    <img class="img_profile"
+                        src="https://i.pinimg.com/280x280_RS/4b/06/41/4b0641e165cc52052375fbddc3556188.jpg" alt="">
+                    <a target="blank" href="https://co.pinterest.com/bestgamesetups/_created/">Bestgamesetups.com</a>
+                </div>
+            </div>
+            <div class="gallery__item">
+                <img src="img/imagen6.jpg" alt="" class="gallery__img">
+                <h5>Fairly average battle station</h5>
+                <div class="img__text">
+                    <img class="img_profile"
+                        src="https://i.pinimg.com/280x280_RS/4b/06/41/4b0641e165cc52052375fbddc3556188.jpg" alt="">
+                    <a target="blank" href="https://co.pinterest.com/bestgamesetups/_created/">Bestgamesetups.com</a>
+                </div>
+            </div>
+            <div class="gallery__item">
+                <img src="img/imagen7.jpg" alt="" class="gallery__img">
+                <h5>Fairly average battle station</h5>
+                <div class="img__text">
+                    <img class="img_profile"
+                        src="https://i.pinimg.com/280x280_RS/4b/06/41/4b0641e165cc52052375fbddc3556188.jpg" alt="">
+                    <a target="blank" href="https://co.pinterest.com/bestgamesetups/_created/">Bestgamesetups.com</a>
+                </div>
+            </div>
+            <div class="gallery__item">
+                <img src="img/imagen8.jpg" alt="" class="gallery__img">
+                <h5>Fairly average battle station</h5>
+                <div class="img__text">
+                    <img class="img_profile"
+                        src="https://i.pinimg.com/280x280_RS/4b/06/41/4b0641e165cc52052375fbddc3556188.jpg" alt="">
+                    <a target="blank" href="https://co.pinterest.com/bestgamesetups/_created/">Bestgamesetups.com</a>
+                </div>
+            </div>
+            <div class="gallery__item">
+                <img src="img/imagen9.jpg" alt="" class="gallery__img">
+                <h5>Fairly average battle station</h5>
+                <div class="img__text">
+                    <img class="img_profile"
+                        src="https://i.pinimg.com/280x280_RS/4b/06/41/4b0641e165cc52052375fbddc3556188.jpg" alt="">
+                    <a target="blank" href="https://co.pinterest.com/bestgamesetups/_created/">Bestgamesetups.com</a>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
