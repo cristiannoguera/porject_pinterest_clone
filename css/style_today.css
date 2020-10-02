@@ -1,0 +1,23 @@
+body {
+    background: white;
+    }
+h1 {
+    color: black;
+    text-align: center;
+}
+h2{
+    color: black;
+    text-align: center;
+}
+.encabezado{
+    width: 750px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0;
+    padding-top: 120px;
+    margin: 0 auto;
+}
+.image{
+    width: 60px;
+}
