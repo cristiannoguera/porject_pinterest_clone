@@ -158,14 +158,16 @@ header {
     font-weight: bold;
     text-align: left;
     padding: 0;
-    padding-top: 120px; /*Eliminar cuando se cree el header*/
+    padding-top: 90px; /*Eliminar cuando se cree el header*/
     margin: 0 auto;
 }
 /*fallowers*/
-.imagen__logo {
-    width: 60px;
-    height: 60px;
+.imagen__logo{
+    width: 59px;
+    height: 59px;
     margin: -7px;
+    border-radius: 32px;
+    border: white 2px solid;
 }
 .img_add{
     display: inline-flex;
@@ -173,12 +175,12 @@ header {
     margin: 0;
     margin-left: 100px;
 }
-.imagen__logo2 {
-    width: 60px;
-    height: 60px;
+.imagen__logo2{
+    width: 100px;
+    height: 90px;
     margin: 0;
     padding: 0;
-    border-radius: 35px;
+    border-radius: 45px;
     
 }
 
@@ -191,7 +193,7 @@ header {
     padding: 20px;
     grid-gap: 15px;
 }
-.gallery__item {
+.gallery__item{
     position: relative;
 
 }
@@ -317,8 +319,8 @@ a{
         grid-template-columns: repeat(5, 1fr);
     }
     .container {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 90px;
+    padding-right: 90px;
     }
     .encabezado {
         width: 750px;
