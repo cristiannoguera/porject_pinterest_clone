@@ -1,6 +1,8 @@
-*{
+* {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+
 /*Estilos del header*/
 
 header {
@@ -17,6 +19,7 @@ header {
     position: fixed;
     background: #fff;
 }
+
 .cont-img-inicio {
     width: 15%;
     margin: 1px;
@@ -151,59 +154,71 @@ header {
         display: inherit;
     }
 }
+
+
 /*Finaliza los estilos del header*/
-.encabezado{
+
+.encabezado {
     width: 750px;
     font-size: 22px;
     font-weight: bold;
     text-align: left;
     padding: 0;
-    padding-top: 90px; /*Eliminar cuando se cree el header*/
+    padding-top: 90px;
+    /*Eliminar cuando se cree el header*/
     margin: 0 auto;
 }
+
+
 /*fallowers*/
-.imagen__logo{
+
+.imagen__logo {
     width: 59px;
     height: 59px;
     margin: -7px;
     border-radius: 32px;
     border: white 2px solid;
 }
-.img_add{
+
+.img_add {
     display: inline-flex;
     padding: 0;
     margin: 0;
     margin-left: 100px;
 }
-.imagen__logo2{
+
+.imagen__logo2 {
     width: 100px;
     height: 90px;
     margin: 0;
     padding: 0;
     border-radius: 45px;
-    
 }
+
 
 /*Estilos galerias*/
 
-.gallery-container{
+.gallery-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 280px;
     padding: 20px;
     grid-gap: 15px;
 }
-.gallery__item{
-    position: relative;
 
+.gallery__item {
+    position: relative;
+    z-index: -1;
 }
-.gallery__img{
+
+.gallery__img {
     width: 100%;
     height: 70%;
     object-fit: cover;
     border-radius: 15px;
 }
-.gallery__title{
+
+.gallery__title {
     position: absolute;
     bottom: 0;
     color: rgb(102, 233, 41);
@@ -211,12 +226,14 @@ header {
     margin: 0;
     padding: 10px;
 }
-.img__text{
+
+.img__text {
     display: inline-flex;
     padding: 0;
     align-items: center;
 }
-h5{
+
+h5 {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 14px;
     color: #000000;
@@ -226,7 +243,8 @@ h5{
     margin: 0;
     padding-left: 5px;
 }
-a{
+
+a {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 14px;
     text-decoration: none;
@@ -237,6 +255,7 @@ a{
     padding-left: 5px;
     margin: 0;
 }
+
 .img_profile {
     border-radius: 33px;
     width: 32px;
@@ -244,15 +263,19 @@ a{
     padding: 0;
     margin: 0;
 }
-.gallery__item:nth-child(4){
+
+.gallery__item:nth-child(4) {
     grid-column-start: span 2;
 }
-.gallery__item:nth-child(5){
+
+.gallery__item:nth-child(5) {
     grid-row-start: span 2;
 }
-.gallery__item:nth-child(7){
+
+.gallery__item:nth-child(7) {
     grid-row-start: span 2;
 }
+
 @media (max-width:766px) {
     .gallery-container {
         grid-template-columns: repeat(2, 1fr);
@@ -260,7 +283,7 @@ a{
     .encabezado {
         width: 150px;
     }
-    .gallery__item:nth-child(2){
+    .gallery__item:nth-child(2) {
         grid-row-start: span 2;
     }
     .encabezado h2 {
@@ -270,6 +293,7 @@ a{
         width: 500px;
     }
 }
+
 @media (min-width:767px) {
     .gallery-container {
         grid-template-columns: repeat(2, 1fr);
@@ -277,10 +301,11 @@ a{
     .encabezado {
         width: 450px;
     }
-    .gallery__item:nth-child(3){
+    .gallery__item:nth-child(3) {
         grid-column-start: span 2;
     }
 }
+
 @media (min-width: 900px) {
     .gallery-container {
         grid-template-columns: repeat(3, 1fr);
@@ -292,43 +317,45 @@ a{
         padding-left: 50px;
         padding-right: 50px;
     }
-    .gallery__item:nth-child(3){
+    .gallery__item:nth-child(3) {
         grid-column-start: span 1;
     }
 }
+
 @media (min-width:1100px) {
     .gallery-container {
         grid-template-columns: repeat(4, 1fr);
     }
     .container {
-    padding-left: 50px;
-    padding-right: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
     }
     .encabezado {
         width: 750px;
     }
-    .gallery__item:nth-child(3){
+    .gallery__item:nth-child(3) {
         grid-column-start: span 2;
     }
-    .gallery__item:nth-child(15){
+    .gallery__item:nth-child(15) {
         grid-column-start: span 2;
     }
 }
+
 @media (min-width:1500px) {
     .gallery-container {
         grid-template-columns: repeat(5, 1fr);
     }
     .container {
-    padding-left: 90px;
-    padding-right: 90px;
+        padding-left: 90px;
+        padding-right: 90px;
     }
     .encabezado {
         width: 750px;
     }
-    .gallery__item:nth-child(3){
+    .gallery__item:nth-child(3) {
         grid-column-start: span 1;
     }
-    .gallery__item:nth-child(12){
+    .gallery__item:nth-child(12) {
         grid-row-start: span 2;
     }
 }

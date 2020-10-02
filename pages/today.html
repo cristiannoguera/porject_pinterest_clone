@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../img/pinLogoIco.png" />
+    <link rel="stylesheet" href="../css/style_today.css">
+    <title>Pinterest</title>
+</head>
+
+<body>
+    <header>
+        <div class="btn-cont-left">
+            <div class="logo-cont menuHover">
+                <i class="fa fa-pinterest logo-ico"></i>
+            </div>
+            <div class="menu-cont menuHover sm-view">
+                <select id="menuPin" name="menuPin" class="menuPin">
+                    <option value="inicio">Inicio
+                        <!--&#10003;-->
+                    </option>
+                    <option value="hoy">Hoy</option>
+                    <option value="siguiendo">Siguiendo</option>
+                </select>
+            </div>
+            <div class="menu-cont menuHover md-view">
+                <a href="../index.html" class="menuPin">
+                    <input class="menuPin" type="button" value="Inicio">
+                </a>
+            </div>
+            <div class="menu-cont menuHover md-view selected">
+                <input class="menuPin" type="button" value="Hoy">
+            </div>
+            <div class="menu-cont menuHover md-view">
+                <a href="following.html" class="menuPin">
+                    <input class="menuPin" type="button" value="Siguiendo">
+                </a>
+
+            </div>
+        </div>
+        <div class="search-cont">
+            <input class="input-search md-view" type="search" name="" id="" placeholder="Buscar">
+        </div>
+
+        <div class="btn-cont-right">
+            <div class="logo-cont menuHover sm-view">
+                <i class="fa fa-search menu-ico"></i>
+            </div>
+            <div class="logo-cont menuHover">
+                <i class="fa fa-bell menu-ico"></i>
+            </div>
+            <div class="logo-cont menuHover">
+                <i class="fa fa-commenting menu-ico" aria-hidden="true"></i>
+            </div>
+            <div class="logo-cont menuHover">
+                <i class="fa fa-user-circle menu-ico iBlue" aria-hidden="true"></i>
+            </div>
+            <div class="logo-cont caret menuHover">
+                <i class="fa fa-caret-down menu-ico " aria-hidden="true"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="containers">
+        <h1>HOY</h1>
+        <h2>02 de octubre 2020</h2>
+        <div class="cont-images-today">
+            <img class="item-image" src="https://www.nationalgeographic.com.es/medio/2018/02/27/playa-de-isuntza-lekeitio__1280x720.jpg" alt="Imagen">
+            <img class="item-image" src="https://i2.wp.com/blog.vivaaerobus.com/wp-content/uploads/2020/04/paisajes-de-mexico.jpg?fit=1050%2C590&ssl=1 " alt="Imagen ">
+            <img class="item-image" src="https://i.ytimg.com/vi/oWpwC5SMtSw/maxresdefault.jpg " alt="Imagen ">
+            <img class="item-image" src="https://img.vixdata.io/pd/jpg-large/es/sites/default/files/imj/L/Los-5-mejores-paisajes-del-mundo-1.jpg " alt="Imagen ">
+            <img class="item-image" src="https://www.tiposde.top/wp-content/uploads/2019/08/1.-Paisaje-f%C3%ADsico.jpg " alt="Imagen ">
+            <img class="item-image" src="https://miracomohacerlo.com/wp-content/uploads/2016/10/Fotos-de-paisajes-1024x683.jpg " alt="Imagen ">
+            <img class="item-image" src="https://la.network/wp-content/uploads/2018/07/BOSQUE-HERMOSO.jpg " alt="Imagen ">
+            <img class="item-image" src="https://www.blogdelfotografo.com/wp-content/uploads/2020/04/fotografo-paisajes.jpg " alt="Imagen ">
+        </div>
+
+        <!-- 
+        <img class="image" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D9QNUXxuwt1Y&psig=AOvVaw10WdgDQmgpZ48ALiCr-Xb1&ust=1601598924522000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKDR64mTkuwCFQAAAAAdAAAAABAN" alt="Imagen">
+        <img class="image" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fkaikucaffelatte.com%2Fblog%2Ffotos-paisajes-instagram%2F&psig=AOvVaw10WdgDQmgpZ48ALiCr-Xb1&ust=1601598924522000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKDR64mTkuwCFQAAAAAdAAAAABAT"
+            alt="Imagen">
+        <img src="https://www.nationalgeographic.com.es/medio/2018/02/27/playa-de-isuntza-lekeitio__1280x720.jpg" alt="Imagen">
+        <img src="https://i2.wp.com/blog.vivaaerobus.com/wp-content/uploads/2020/04/paisajes-de-mexico.jpg?fit=1050%2C590&ssl=1 " alt="Imagen ">
+        <img src="https://i.ytimg.com/vi/oWpwC5SMtSw/maxresdefault.jpg " alt="Imagen ">
+        <img src="https://img.vixdata.io/pd/jpg-large/es/sites/default/files/imj/L/Los-5-mejores-paisajes-del-mundo-1.jpg " alt="Imagen ">
+        <img src="https://www.tiposde.top/wp-content/uploads/2019/08/1.-Paisaje-f%C3%ADsico.jpg " alt="Imagen ">
+        <img src="https://miracomohacerlo.com/wp-content/uploads/2016/10/Fotos-de-paisajes-1024x683.jpg " alt="Imagen ">
+        <img src="https://la.network/wp-content/uploads/2018/07/BOSQUE-HERMOSO.jpg " alt="Imagen ">
+        <img src="https://www.blogdelfotografo.com/wp-content/uploads/2020/04/fotografo-paisajes.jpg " alt="Imagen "> -->
+    </div>
+</body>
+
+</html>
